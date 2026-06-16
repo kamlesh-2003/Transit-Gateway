@@ -6,7 +6,7 @@ resource "aws_eip" "v3-nat-eip" {
 #nat gateway is created inside public subnet-1 and it is used to give internet access to the private server
 resource "aws_nat_gateway" "vpc-3-ngw" {
   availability_mode = "zonal"
-  subnet_id         = aws_subnet.vpc-3-pub-subnet-3.id
+  subnet_id         = aws_subnet.vpc-3-pub-subnet-1.id
   connectivity_type = "public"
   allocation_id     = aws_eip.v3-nat-eip.id
   tags = {

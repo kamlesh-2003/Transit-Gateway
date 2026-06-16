@@ -1,4 +1,4 @@
-output "v2-vpc_id" {
+output "v2-vpc-id" {
     value = aws_vpc.vpc-2.id
 }
 output "v2-pub-subnet-id" {

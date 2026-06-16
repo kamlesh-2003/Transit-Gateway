@@ -26,14 +26,14 @@ resource "aws_ec2_transit_gateway_vpc_attachment" "tgw-vpc-attachment" {
 
 resource "aws_ec2_transit_gateway_vpc_attachment" "tgw-vpc-2-attachment" {
   transit_gateway_id = aws_ec2_transit_gateway.tgw.id
-  vpc_id = module.v2-module.vpc_2_id
-  subnet_ids = [module.v2-module.v2pub-subnet-id,
-                    module.v2-module.v2pri-subnet-id]
+  vpc_id = module.v2-module.v2-vpc-id
+  subnet_ids = [module.v2-module.v2-pub-subnet-id,
+                    module.v2-module.v2-pri-subnet-id]
 }
 
 resource "aws_ec2_transit_gateway_vpc_attachment" "tgw-vpc-3-attachment" {
   transit_gateway_id = aws_ec2_transit_gateway.tgw.id
-  vpc_id = module.v3-module.vpc_3_id
+  vpc_id = module.v3-module.v3-vpc-id
   subnet_ids = [module.v3-module.v3-pub-subnet-id,
                     module.v3-module.v3-pri-subnet-id]
 }

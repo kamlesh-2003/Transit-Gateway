@@ -22,6 +22,6 @@ resource "aws_route_table" "vpc-3-pri-route-table" {
     cidr_block = "0.0.0.0/0"
   }
   tags = {
-    Name = v3-var.pri-rt-name
+    Name = var.v3-pri-rt-name
   }
 }
