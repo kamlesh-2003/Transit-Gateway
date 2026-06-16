@@ -1,3 +1,8 @@
+#infrastructure region 
+variable "v1-region" {
+  default = "ap-south-1"
+}
+
 # VPC CIDR block
 variable "cidr_block" {
   default = "10.0.0.0/16"
