@@ -1,13 +1,13 @@
 module "v1-module" {
-  source = "./vpc-1-infra"
+  source = "./vpc-1"
 }
 
 module "v2-module" {
-  source = "./vpc-2-infra"
+  source = "./vpc-2"
 }
 
 module "v3-module" {
-  source = "./vpc-3-infra"
+  source = "./vpc-3"
 }
 
 resource "aws_ec2_transit_gateway" "tgw" {
