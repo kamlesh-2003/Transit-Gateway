@@ -54,3 +54,7 @@ variable "subnet-2-name" {
     default = "vpc-1-pri-subnet-1"
     description = "It is private subnet name/tag" 
 }
+
+variable "ngw-name" {
+  default = "NAT-gtw 1-VPC"
+}
