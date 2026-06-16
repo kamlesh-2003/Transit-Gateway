@@ -7,3 +7,8 @@ variable "cidr_block" {
 variable "vpc-name" {
   default = "vpc-1"
 }
+
+#internet gateway name 
+variable "igw-name" {
+  default = "vpc-1 internet gateway"
+}
