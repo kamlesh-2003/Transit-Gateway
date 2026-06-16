@@ -55,6 +55,17 @@ variable "subnet-2-name" {
     description = "It is private subnet name/tag" 
 }
 
+#nat gateway name
 variable "ngw-name" {
   default = "NAT-gtw 1-VPC"
+}
+
+#public route table name
+variable "pub-rt-name" {
+  default = "VPC-1-pub-RT"
+}
+
+#public route table name
+variable "pri-rt-name" {
+  default = "VPC-1-pri-RT"
 }
