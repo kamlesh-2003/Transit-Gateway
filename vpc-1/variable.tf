@@ -97,3 +97,38 @@ variable "https" {
     default = 443
     description = "It allows 443 port number " 
 }
+
+#amazon linux ami-id 
+variable "amazon-linux-ami" {
+    type = string
+    default = "ami-0e38835daf6b8a2b9"
+    description = "It is amazon linux ami id" 
+}
+
+#ec2 instance type
+variable "instance-type" {
+    type = string
+    default = "t3.micro"
+    description = "It is an instance type" 
+}
+
+#key pair name used into ec2
+variable "key-pair" {
+    type = string
+    default = "kamlesh-02"
+    description = "It is a private and public key pair" 
+}
+
+#ec2 public server name
+variable "pub-server-1" {
+    type = string
+    default = "vpc-1-pub-server"
+    description = "It is a public server name/tags" 
+}
+
+#ec2 private server name
+variable "private-server-1" {
+    type = string
+    default = "vpc-1-pri-server"
+    description = "It is a private server name/tags" 
+}
