@@ -69,3 +69,31 @@ variable "pub-rt-name" {
 variable "pri-rt-name" {
   default = "VPC-1-pri-RT"
 }
+
+# security group name
+variable "security-group-name" {
+    type = string
+    default = "vpc-1-security-group"
+    description = "It's a security group name" 
+}
+
+#ssh protocol
+variable "ssh" {
+    type = number
+    default = 22
+    description = "It allows 22 port number " 
+}
+
+#http protocol
+variable "http" {
+    type = number
+    default = 80
+    description = "It allows 80 port number " 
+}
+
+#https protocol
+variable "https" {
+    type = number
+    default = 443
+    description = "It allows 443 port number " 
+}
